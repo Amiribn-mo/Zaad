@@ -10,8 +10,8 @@ import {
 const HomePage = () => {
   const publishableKey = process.env.CLERK_SECRET_KEY;
   return (
-    <main className="min-h-screen bg-gray-100  flex flex-col items-center p-4 sm:p-6">
-      <div className=" flex flex-col gap-2 max-w-3/4 mx-auto">
+    <main className="max-h-screen min-h-11/12 bg-gray-100  flex flex-col items-center p-4 sm:p-3">
+      <div className=" flex flex-col gap-2 max-w-full mx-auto">
         <div className="text-center text-zinc-800">
           <h2 className="text-4xl font-semibold font-mono">ZAD</h2>
         </div>

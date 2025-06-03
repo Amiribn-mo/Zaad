@@ -24,7 +24,7 @@ export default function PromptInput() {
   } = useChatLogic();
 
   return (
-    <div className="container flex flex-col items-center gap-5 h-auto py-6">
+    <div className="container flex flex-col items-center gap-5 h-auto py-6 sm:w-11/12">
       <div
         ref={chatContainerRef}
         className="w-full max-w-7xl rounded-lg p-4 max-h-[60vh] overflow-y-auto overflow-x-hidden hide-scrollbar"
@@ -47,10 +47,10 @@ export default function PromptInput() {
             >
               <div
                 className={`max-w-[100%] p-3 rounded-lg border-b-cyan-600 ${
-                  msg.role === 'user' ? 'bg-white text-black' : 'bg-white text-zinc-800'
+                  msg.role === 'user' ? 'bg-zinc-800 text-gray-100' : 'bg-white text-zinc-800'
                 }`}
               >
-                <p className="font-mono whitespace-pre-wrap border-r-indigo-500">
+                <p className="font-mono whitespace-pre-wrap border-r-indigo-500 ">
                   {displayText[index]}
                   {msg.role === 'assistant' &&
                     isTyping &&
@@ -74,7 +74,7 @@ export default function PromptInput() {
       >
         <div className="relative rounded-full overflow-hidden bg-white shadow-xl flex-grow w-full">
           <input
-            className="bg-transparent outline-none border-none pl-6 pr-16 py-4 w-full font-sans text-lg font-semibold"
+            className="bg-transparent outline-none border-none pl-6 pr-16 py-4 w-full font-sans text-lg font-semibold sm:bottom-0"
             placeholder="Type a message..."
             name="text"
             type="text"
