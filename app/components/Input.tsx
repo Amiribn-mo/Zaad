@@ -74,8 +74,8 @@ export default function PromptInput() {
       >
         <div className="relative rounded-full overflow-hidden bg-white shadow-xl flex-grow w-full">
           <input
-            className="bg-transparent outline-none border-none pl-6 pr-16 py-4 w-full font-sans text-lg font-semibold sm:bottom-0"
-            placeholder="Type a message..."
+            className="bg-transparent outline-none border-none pl-6 pr-16 py-4 w-full font-sans text-lg font-semibold sm:bottom-0 placeholder:text-gray-400"
+            placeholder="Zad"
             name="text"
             type="text"
             value={input}
@@ -85,7 +85,7 @@ export default function PromptInput() {
           <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
             <button
               type="submit"
-              className="w-12 h-12 rounded-full bg-yellow-600 group shadow-xl flex items-center justify-center relative overflow-hidden active:scale-95 transition-transform duration-100"
+              className="w-12 h-12 rounded-full bg-yellow-600 group shadow-xl flex items-center justify-center relative overflow-hidden active:scale-95 transition-transform duration-100 animate-bounce"
               disabled={isLoading}
             >
               <svg
