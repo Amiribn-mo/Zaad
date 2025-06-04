@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <html lang="en">
         <Head>
           {/* Favicon */}
-          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+          <link rel="icon" href="/favicon-32x32.png" type="image/x-icon" />
           {/* PWA Metadata */}
           <link rel="manifest" href="/manifest.json" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
           <meta name="apple-mobile-web-app-title" content="Zad" />
-          <link rel="apple-touch-icon" href="/mainPicture.svg" />
+          <link rel="apple-touch-icon" href="/public/png.png" />
         </Head>
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           {children}
