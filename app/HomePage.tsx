@@ -21,6 +21,7 @@ const HomePage = () => {
             {/* Your form component goes here */}
             <PromptInput />
           </SignedIn>
+           
           <SignedOut>
             <RedirectToSignIn />
           </SignedOut>

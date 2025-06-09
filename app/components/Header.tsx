@@ -1,6 +1,8 @@
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import React from "react";
 
+
+
 const Header = () => {
   return (
     <div>
@@ -18,7 +20,6 @@ const Header = () => {
             <SignedIn>
               <UserButton />
             </SignedIn>
-
 
           </div>
         </div>
