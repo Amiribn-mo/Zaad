@@ -3,7 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useUser } from '@clerk/nextjs';
-import { NextResponse } from 'next/server';
+
 
 interface ChatMessage {
   role: 'user' | 'assistant';
