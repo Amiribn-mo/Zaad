@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useUser } from '@clerk/nextjs';
+import { NextResponse } from 'next/server';
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -60,6 +61,7 @@ export const useChatLogic = () => {
       setHistory((prev) => [...prev, assistantMessage]);
       setDisplayText((prev) => [...prev, '']);
       setCurrentIndices((prev) => [...prev, 0]);
+      
       setInput('');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error');

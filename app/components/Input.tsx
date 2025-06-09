@@ -27,7 +27,7 @@ export default function PromptInput() {
     <div className="container flex flex-col items-center gap-5 h-auto py-6 sm:w-11/12">
       <div
         ref={chatContainerRef}
-        className="w-full max-w-7xl rounded-lg p-4 max-h-[60vh] overflow-y-auto overflow-x-hidden hide-scrollbar"
+        className="w-full max-w-7xl rounded-lg p-4 max-h-[50vh] overflow-y-auto overflow-x-hidden hide-scrollbar"
       >
         {history.length === 0 ? (
           <h1 className="text-zinc-500 text-center text-5xl">
