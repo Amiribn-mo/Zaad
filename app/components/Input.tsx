@@ -18,10 +18,14 @@ export default function PromptInput() {
     lastMessageRef,
     isSignedIn,
     user,
-    // isLoaded, // Removed
+    close,
+   isLoaded,
+    // Removed
     handleInputChange,
     handleClick,
   } = useChatLogic();
+
+
 
   return (
     <div className="container flex flex-col items-center gap-5 h-auto py-6 sm:w-11/12">
@@ -59,6 +63,7 @@ export default function PromptInput() {
                       <span className="animate-blink">|</span>
                     )}
                 </p>
+               
               </div>
             </div>
           ))
@@ -120,8 +125,9 @@ export default function PromptInput() {
               <div className="w-full h-full -rotate-45 absolute -left-[32%] -top-[32%] group-hover:left-[100%] group-hover:top-[100%] bg-black duration-1000" />
             </button>
           </div>
-        </div>
+        </div>{isLoaded?<button onClick={close} className='bg-zinc-900 px-5 p-3 font-semibold text-white hover:scale-110 rounded-md'>Reset</button>:""}
       </form>
+       
     </div>
   );
 }

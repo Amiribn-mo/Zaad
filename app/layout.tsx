@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
           <meta name="apple-mobile-web-app-title" content="Zad" />
-          <link rel="apple-touch-icon" href="public\zaad\apple-touch-icon.png" />
+          <link rel="apple-touch-icon" href="\apple-touch-icon.png" />
         </Head>
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           {children}

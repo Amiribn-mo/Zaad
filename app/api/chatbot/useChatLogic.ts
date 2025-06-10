@@ -29,6 +29,10 @@ export const useChatLogic = () => {
     setInput(e.target.value);
   };
 
+  const close = () =>{
+   
+    setHistory([])
+  }
   // Handle form submission
   const handleClick = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
@@ -120,6 +124,7 @@ export const useChatLogic = () => {
     isSignedIn,
     user,
     isLoaded,
+    close,
     handleInputChange,
     handleClick,
   };
