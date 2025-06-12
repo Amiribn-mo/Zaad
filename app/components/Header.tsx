@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div>
       <div>
-        <div className="container  flex justify-around  h-auto  items-center sticky bg-zinc-900">
+        <div className="container   flex justify-around  h-auto  items-center sticky bg-zinc-900 ">
           <h4 className="text-2xl font-semibold  text-white p-5">Exlorer</h4>
           <div className="flex gap-2 text-white  ">
             <SignedOut>

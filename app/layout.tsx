@@ -23,18 +23,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <ClerkProvider>
       <html lang="en">
-        <Head>
-          {/* Favicon */}
-          <link rel="icon" href="/favicon-32x32.png" type="image/x-icon" />
-          {/* PWA Metadata */}
-          <link rel="manifest" href="/manifest.json" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="theme-color" content="#000000" />
-          <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-          <meta name="apple-mobile-web-app-title" content="Zad" />
-          <link rel="apple-touch-icon" href="\apple-touch-icon.png" />
-        </Head>
+        <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#4f46e5" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Explorer" />
+        <link rel="apple-touch-icon" href="/mainPic.png" />
+      </head>
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
           {children}
           

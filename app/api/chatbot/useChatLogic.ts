@@ -8,6 +8,7 @@ import { useUser } from '@clerk/nextjs';
 interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
+ 
 }
 
 export const useChatLogic = () => {
@@ -29,10 +30,13 @@ export const useChatLogic = () => {
     setInput(e.target.value);
   };
 
-  const close = () =>{
-   
-    setHistory([])
-  }
+  // const close = () => {
+  //   if (abortControllerRef.current) {
+  //     abortControllerRef.current.abort(); // Cancel the fetch request
+  //     setIsLoading(false); // Reset loading state
+  //     setError('Request cancelled'); // Optional: Set error message
+  //   }
+  // };
   // Handle form submission
   const handleClick = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();

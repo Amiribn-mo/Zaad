@@ -45,3 +45,12 @@
   }
   
 }
+
+@keyframes clipPathAnimation {
+  0% {
+    clip-path: circle(10% at 0 0);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
+}
