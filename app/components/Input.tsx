@@ -18,7 +18,7 @@ export default function PromptInput() {
     lastMessageRef,
     isSignedIn,
     user,
-    close,
+  
    isLoaded,
     // Removed
     handleInputChange,

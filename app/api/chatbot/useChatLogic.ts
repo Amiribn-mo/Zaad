@@ -128,7 +128,6 @@ export const useChatLogic = () => {
     isSignedIn,
     user,
     isLoaded,
-    close,
     handleInputChange,
     handleClick,
   };
